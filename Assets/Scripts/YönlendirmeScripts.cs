@@ -6,24 +6,53 @@ using UnityEngine.SceneManagement;
 public class YönlendirmeScripts : MonoBehaviour
 {
     // Start is called before the first frame update
-   
+
+    public GameObject BackGroundImage1;
+    public GameObject MagazaImage;
+    public GameObject SesiAc;
+    public GameObject SesiKapat;
+    public GameObject HikayeMenusu;
     public void CikisButonu()
     {
         Application.Quit();
     }
 
-    public void KayitEkrani()       // Sahne Arası Geçiş
+    public void OynaButonu()       // Sahne Arası Geçiş
     {
-        //SceneManager.LoadScene(1);
-        SceneManager.LoadScene("KayitEkrani");
+        SceneManager.LoadScene(1);
+        //SceneManager.LoadScene("KayitEkrani");
     }
 
-    //public void OpenPanel()         // Panel Açma Kapama
-    //{
+    public void OpenMagaza()
+    {
+             
+        MagazaImage.SetActive(true);
+        BackGroundImage1.SetActive(false);        
+    }
 
-    //    if (Panel != null)
-    //    {
-    //        Panel.SetActive(true);
-    //    }
-    //}
+    public void AnaMenu()
+    {
+        HikayeMenusu.SetActive(false);
+        MagazaImage.SetActive(false);
+        BackGroundImage1.SetActive(true);
+    }
+    
+    public void SesAc()
+    {   
+        SesiAc.SetActive(true);
+        SesiKapat.SetActive(false);
+    }
+    
+    public void SesKapat()
+    {
+        SesiAc.SetActive(false);
+        SesiKapat.SetActive(true);
+    }
+
+    public void HikayeMenuAc()
+    {
+        HikayeMenusu.SetActive(true);
+    }
+    
+    
 }
