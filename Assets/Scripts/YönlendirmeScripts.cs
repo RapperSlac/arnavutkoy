@@ -15,15 +15,18 @@ public class YönlendirmeScripts : MonoBehaviour
     public GameObject Sayfa1;
     public GameObject Sayfa2;
     public GameObject Sayfa3;
-    public GameObject HikayeBalonu1, HikayeBalonu2, HikayeBalonu3, HikayeBalonu4;
+    public GameObject BölümSecme;
+    public GameObject Bölüm1Bildirim1, Bölüm1Bildirim2, Bölüm1Bildirim3, Bölüm1Bildirim4;
     public void CikisButonu()
     {
         Application.Quit();
     }
 
-    public void OynaButonu()       // Sahne Arası Geçiş
+    public void OynaButonu()       
     {
-        SceneManager.LoadScene(1);
+        BölümSecme.SetActive(true);
+        BackGroundImage1.SetActive(false);
+        //SceneManager.LoadScene(1);
         //SceneManager.LoadScene("KayitEkrani");
     }
 
@@ -43,6 +46,7 @@ public class YönlendirmeScripts : MonoBehaviour
         Sayfa1.SetActive(false);
         Sayfa2.SetActive(false);
         Sayfa3.SetActive(false);
+        BölümSecme.SetActive(false);
     }
     
     public void SesAc()
@@ -79,31 +83,28 @@ public class YönlendirmeScripts : MonoBehaviour
         }
     }
     
-    public void HikayeBalonu()
+    
+    public void bölüm1()
     {
-        if(HikayeBalonu1== null && HikayeBalonu2==null && HikayeBalonu3==null && HikayeBalonu4==null)
+        if (BölümSecme.active == true)
         {
-            HikayeBalonu1.SetActive(true);
+            BölümSecme.SetActive(false);
+            Bölüm1Bildirim1.SetActive(true);
         }
-        else if (HikayeBalonu1.active==true && HikayeBalonu2 == null && HikayeBalonu3 == null && HikayeBalonu4 == null)
+        else if (Bölüm1Bildirim1.active == true)
         {
-            HikayeBalonu1.SetActive(false);
-            HikayeBalonu2.SetActive(true);
+            Bölüm1Bildirim1.SetActive(false);
+            Bölüm1Bildirim2.SetActive(true);
         }
-        else if (HikayeBalonu1==null && HikayeBalonu2.active==true && HikayeBalonu3 == null && HikayeBalonu4 == null)
+        else if(Bölüm1Bildirim2.active == true)
         {
-            HikayeBalonu2.SetActive(false);
-            HikayeBalonu3.SetActive(true);
+            Bölüm1Bildirim2.SetActive (false);
+            Bölüm1Bildirim3.SetActive(true);
         }
-        else if (HikayeBalonu1 == null && HikayeBalonu2==null && HikayeBalonu3.active==true && HikayeBalonu4 == null)
+        else if(Bölüm1Bildirim3.active == true)
         {
-            HikayeBalonu3.SetActive (false);
-            HikayeBalonu4.SetActive(true);
-        }
-        else if (HikayeBalonu1 == null && HikayeBalonu2 == null && HikayeBalonu3==null && HikayeBalonu4.active==true)
-        {
-            HikayeBalonu4.SetActive (false);
-            SceneManager.LoadScene(1);
+            Bölüm1Bildirim3.SetActive (false);
+            //SceneManager.LoadScene(1);
         }
     }
     
