@@ -9,14 +9,15 @@ public class YönlendirmeScripts : MonoBehaviour
 
     public GameObject BackGroundImage1;
     public GameObject MagazaImage;
-    public GameObject SesiAc;
-    public GameObject SesiKapat;
+    public GameObject SoundOff;
+    public GameObject SoundOn;
+    public GameObject Music;
     public GameObject HikayeMenusu;
     public GameObject Sayfa1;
     public GameObject Sayfa2;
     public GameObject Sayfa3;
     public GameObject BölümSecme;
-    public GameObject Bölüm1Bildirim1, Bölüm1Bildirim2, Bölüm1Bildirim3, Bölüm1Bildirim4;
+    public GameObject BölümBildirimleri, Bölüm1Bildirim1, Bölüm1Bildirim2, Bölüm1Bildirim3;
     public void CikisButonu()
     {
         Application.Quit();
@@ -49,16 +50,20 @@ public class YönlendirmeScripts : MonoBehaviour
         BölümSecme.SetActive(false);
     }
     
-    public void SesAc()
-    {   
-        SesiAc.SetActive(true);
-        SesiKapat.SetActive(false);
-    }
-    
-    public void SesKapat()
+    public void SesAcKapat()
     {
-        SesiAc.SetActive(false);
-        SesiKapat.SetActive(true);
+        if(SoundOff.active==true)
+        {
+            SoundOff.SetActive(false);
+            SoundOn.SetActive(true) ;
+            Music.SetActive(false );
+        }
+        else if(SoundOn.active==true)
+        {
+            SoundOn.SetActive(false);
+            SoundOff.SetActive(true);
+            Music.SetActive(true);
+        }
     }
 
     public void HikayeMenuAc()
@@ -89,6 +94,7 @@ public class YönlendirmeScripts : MonoBehaviour
         if (BölümSecme.active == true)
         {
             BölümSecme.SetActive(false);
+            BölümBildirimleri.SetActive(true);
             Bölüm1Bildirim1.SetActive(true);
         }
         else if (Bölüm1Bildirim1.active == true)
