@@ -26,7 +26,7 @@ public class Character : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             animator.SetBool("isW", true);
-            transform.Translate(new Vector3(0, 0, 2) * Time.deltaTime);
+            transform.Translate(new Vector3(0, 0, 3) * Time.deltaTime);
         }
 
         else
