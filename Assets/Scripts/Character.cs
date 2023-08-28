@@ -26,7 +26,7 @@ public class Character : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             animator.SetBool("isW", true);
-            transform.Translate(new Vector3(0, 0, 7) * Time.deltaTime);
+            transform.Translate(new Vector3(0, 0, 2) * Time.deltaTime);
         }
 
         else
@@ -37,7 +37,7 @@ public class Character : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W))
         {
             animator.SetBool("isWandShift", true);
-            transform.Translate(new Vector3(0, 0, 15) * Time.deltaTime);
+            transform.Translate(new Vector3(0, 0, 6) * Time.deltaTime);
         }
         else
         {
