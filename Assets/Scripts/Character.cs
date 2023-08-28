@@ -21,8 +21,6 @@ public class Character : MonoBehaviour
     }
 
 
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.W))
@@ -62,9 +60,6 @@ public class Character : MonoBehaviour
         {
             animator.SetBool("isSpace", false);
         }
-
-
-
 
 
         if (Input.GetKey(KeyCode.D))
