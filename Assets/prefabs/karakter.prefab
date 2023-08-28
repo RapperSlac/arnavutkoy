@@ -867,9 +867,9 @@ GameObject:
   - component: {fileID: 7191417113421529585}
   - component: {fileID: 6686957725203131615}
   - component: {fileID: 4443677713180355128}
-  - component: {fileID: 7312435434577855951}
+  - component: {fileID: 343336090925800722}
   m_Layer: 0
-  m_Name: T-Pose (2) Variant
+  m_Name: karakter
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -882,16 +882,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6652831021054245100}
-  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.18439648, y: 0.0059999824, z: 459.32245}
-  m_LocalScale: {x: 0.41663, y: 0.41663, z: 0.41663}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 589.79834, y: 233.38248, z: -210.99}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2175354778031033977}
   - {fileID: 1965848660207796930}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &4093049465910948064
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -975,7 +975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 5
   rotationSpeed: 90
---- !u!114 &7312435434577855951
+--- !u!114 &343336090925800722
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
