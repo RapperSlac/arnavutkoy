@@ -111,7 +111,7 @@ public class YönlendirmeScripts : MonoBehaviour
         else if(Bölüm1Bildirim3.active == true)
         {
             Bölüm1Bildirim3.SetActive (false);
-            SceneManager.LoadScene("2");
+            SceneManager.LoadScene("3");
         }
     }
     
