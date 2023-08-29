@@ -6096,6 +6096,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1783816539}
     m_Modifications:
+    - target: {fileID: 649521155798533449, guid: ba496f2608a0d2447a8b281e9d9f4c51, type: 3}
+      propertyPath: m_TagString
+      value: Engel
+      objectReference: {fileID: 0}
     - target: {fileID: 1296900596094190661, guid: ba496f2608a0d2447a8b281e9d9f4c51, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -6145,6 +6149,10 @@ PrefabInstance:
       value: ATomrukBabaa
       objectReference: {fileID: 0}
     - target: {fileID: 1411060192442972121, guid: ba496f2608a0d2447a8b281e9d9f4c51, type: 3}
+      propertyPath: m_TagString
+      value: Engel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137785649146136243, guid: ba496f2608a0d2447a8b281e9d9f4c51, type: 3}
       propertyPath: m_TagString
       value: Engel
       objectReference: {fileID: 0}
