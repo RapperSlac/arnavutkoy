@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class Dead : MonoBehaviour
 {
+    public GameObject Ölme, BölümGeçme;
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Engel")
         {
-            Time.timeScale = 0f;
+            Ölme.SetActive(true);
+            Time.timeScale = 0f;           
         }
 
         if (collision.gameObject.tag == "Son")
         {
-            Time.timeScale = 0f;
+            BölümGeçme.SetActive(true);
+            Time.timeScale = 0f;           
         }
     }
 }
