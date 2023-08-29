@@ -48,6 +48,7 @@ public class YönlendirmeScripts : MonoBehaviour
         Sayfa2.SetActive(false);
         Sayfa3.SetActive(false);
         BölümSecme.SetActive(false);
+        BölümBildirimleri.SetActive(false);
     }
     
     public void SesAcKapat()
@@ -110,7 +111,7 @@ public class YönlendirmeScripts : MonoBehaviour
         else if(Bölüm1Bildirim3.active == true)
         {
             Bölüm1Bildirim3.SetActive (false);
-            //SceneManager.LoadScene(1);
+            SceneManager.LoadScene("2");
         }
     }
     
