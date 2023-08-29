@@ -116,7 +116,3 @@ public class Character : MonoBehaviour
         canJumpInAir = false;
     }
 }
-
-
-
-
